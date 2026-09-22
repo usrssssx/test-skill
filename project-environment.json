@@ -8,8 +8,8 @@
   },
   "git": {
     "provider": "github",
-    "repository": "Business-base/sp-calendar-b24",
-    "repository_url": "https://github.com/Business-base/sp-calendar-b24",
+    "repository": "usrssssx/test-skill",
+    "repository_url": "https://github.com/usrssssx/test-skill",
     "main_branch": "main",
     "test_branch": "test"
   },
