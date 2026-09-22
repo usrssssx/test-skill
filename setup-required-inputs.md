@@ -4,13 +4,14 @@
 
 `LOCAL_READY`
 
-## Next checkpoint: GitHub
+## Next checkpoint: repository mode
 
-Send the GitHub repository URL in ordinary text, for example:
+The supplied repository already contains an application and has unrelated Git history. Choose one option in ordinary text:
 
-Ссылка на GitHub: https://github.com/owner/repository
+- Continue with the existing `Business-base/sp-calendar-b24` application and adapt its environment conservatively.
+- Provide an empty GitHub repository for the newly generated scaffold.
 
-The repository may already exist or may be an empty repository prepared for this test. Do not send passwords, tokens, SSH private keys, or JSON.
+No remote mutation will be performed until this choice is explicit. Do not send passwords, tokens, SSH private keys, or JSON.
 
 ## Completed locally
 

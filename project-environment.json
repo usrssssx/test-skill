@@ -8,8 +8,8 @@
   },
   "git": {
     "provider": "github",
-    "repository": "",
-    "repository_url": "",
+    "repository": "Business-base/sp-calendar-b24",
+    "repository_url": "https://github.com/Business-base/sp-calendar-b24",
     "main_branch": "main",
     "test_branch": "test"
   },
