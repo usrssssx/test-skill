@@ -8,7 +8,9 @@
 
 Create a PHP site for the test domain in CloudPanel. Use PHP 8.4 or 8.5 and make sure the document root can ultimately point to the Laravel `public` directory.
 
-Official instruction: https://www.cloudpanel.io/docs/v2/frontend-area/add-site/
+Instruction: https://delovayasreda.bitrix24.ru/mobile/marketplace/?id=277&base_id=15&scope=internal&node=419
+
+Additional official CloudPanel reference: https://www.cloudpanel.io/docs/v2/frontend-area/add-site/
 
 After creating it, reply in ordinary text with only these values:
 
