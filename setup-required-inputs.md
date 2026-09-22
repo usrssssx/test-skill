@@ -16,10 +16,9 @@ After creating it, reply in ordinary text with only these values:
 
 - server IP or hostname;
 - primary site user created by CloudPanel;
-- actual absolute site path shown by CloudPanel;
 - test site URL.
 
-Do not send the server password yet. It will be requested only at the deploy-user checkpoint if required.
+Do not send the absolute site path or server password. The skill will determine the path over SSH after the deploy key is installed; a password will be requested only at the deploy-user checkpoint if required.
 
 ## Completed locally
 
