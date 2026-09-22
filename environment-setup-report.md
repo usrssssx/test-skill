@@ -61,11 +61,15 @@ No passwords, OAuth tokens, private keys, or production credentials are recorded
 - Branches `main` and `test` were published successfully with a normal push.
 - Local branch `test` remains active and tracks `origin/test`.
 - No force-push or branch replacement was performed.
-- GitHub CLI authentication is currently invalid and must be renewed before repository administration.
+- GitHub CLI authentication was verified for account `usrssssx` using the skill's agent-started authentication helper.
+- PostgreSQL CI workflow was added and passed for commit `0962f4da55865b6d26e4879187937c33db08c9fc`.
+- Successful workflow: `https://github.com/usrssssx/test-skill/actions/runs/35706496601`.
+- `main` requires a Pull Request, one approval, resolved discussions, and successful `test` status check.
+- `test` requires the successful `test` status check.
+- Force-pushes and branch deletion are disabled for `main` and `test`.
 
 ## External work not yet performed
 
-- GitHub repository connection and branch protection
 - CloudPanel test site and dedicated deploy user
 - ED25519 deploy key and key-only SSH verification
 - Managed test PostgreSQL connection
@@ -73,4 +77,4 @@ No passwords, OAuth tokens, private keys, or production credentials are recorded
 - GitHub Actions test deployment and rollback
 - Daily backup artifact and isolated restore drill
 
-The next checkpoint is renewing GitHub CLI authentication, then configuring repository protection.
+The next checkpoint is creating the CloudPanel PHP site for the test domain.
