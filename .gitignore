@@ -7,6 +7,9 @@
 .phpunit.result.cache
 /.codex
 /.cursor/
+environment-setup-report.md
+project-environment.json
+setup-required-inputs.md
 /.idea
 /.nova
 /.phpunit.cache
