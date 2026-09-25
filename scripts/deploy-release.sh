@@ -22,8 +22,12 @@ if [[ -L "$deploy_path/current" ]]; then
 fi
 
 if [[ -e "$release" ]]; then
-  echo "ERROR: release already exists: $release" >&2
-  exit 1
+  if [[ "$previous" == "$release" ]]; then
+    rm -f "$archive" "$0"
+    echo "DEPLOYED_REVISION=$revision"
+    exit 0
+  fi
+  rm -rf -- "$release"
 fi
 
 mkdir "$release"
