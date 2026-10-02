@@ -8,9 +8,6 @@
 /.codex
 /.deploy
 /.cursor/
-environment-setup-report.md
-project-environment.json
-setup-required-inputs.md
 /.idea
 /.nova
 /.phpunit.cache
@@ -25,6 +22,9 @@ setup-required-inputs.md
 /storage/*.key
 /storage/pail
 /vendor
+project-environment.json
+environment-setup-report.md
+setup-required-inputs.md
 _ide_helper.php
 Homestead.json
 Homestead.yaml
