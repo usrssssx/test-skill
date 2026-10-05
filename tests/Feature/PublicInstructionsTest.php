@@ -8,6 +8,7 @@ class PublicInstructionsTest extends TestCase
 {
     public function test_instructions_are_public_without_bitrix24_context(): void
     {
+        $this->assertDirectoryDoesNotExist(public_path('instructions'));
         $this->get('/instructions')->assertOk()->assertSeeText('Инструкции');
 
         foreach (config('instructions') as $slug => $article) {
@@ -29,8 +30,8 @@ class PublicInstructionsTest extends TestCase
     public function test_docx_download_is_present(): void
     {
         $this->get('/instructions/bitrix24')->assertOk()
-            ->assertSee('/instructions/bitrix24-local-app-instruction.docx', false)
+            ->assertSee('/downloads/bitrix24-local-app-instruction.docx', false)
             ->assertDontSee('delovayasreda.bitrix24.ru');
-        $this->assertFileExists(public_path('instructions/bitrix24-local-app-instruction.docx'));
+        $this->assertFileExists(public_path('downloads/bitrix24-local-app-instruction.docx'));
     }
 }

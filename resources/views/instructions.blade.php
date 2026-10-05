@@ -53,7 +53,7 @@
             <ol>@foreach($article['steps'] as [$title, $description])<li><h2>{{ $title }}</h2><p>{{ $description }}</p></li>@endforeach</ol>
             <section class="result"><h2>Что должно получиться</h2><p>{{ $article['result'] }}</p></section>
             <section class="warning"><h2>Важно</h2><p>{{ $article['warning'] }}</p></section>
-            @if($slug === 'bitrix24')<p><a href="{{ asset('instructions/bitrix24-local-app-instruction.docx') }}" download>Скачать инструкцию в DOCX</a></p>@endif
+            @if($slug === 'bitrix24')<p><a href="{{ asset('downloads/bitrix24-local-app-instruction.docx') }}" download>Скачать инструкцию в DOCX</a></p>@endif
             <h2>Официальная документация</h2>
             <ul class="sources">@foreach($article['sources'] as $label => $url)<li><a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $label }}</a></li>@endforeach</ul>
         @else
