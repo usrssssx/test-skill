@@ -1,7 +1,11 @@
 <?php
 
 use App\Http\Controllers\Bitrix24AppController;
+use App\Http\Controllers\InstructionController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/instructions', [InstructionController::class, 'index'])->name('instructions.index');
+Route::get('/instructions/{slug}', [InstructionController::class, 'show'])->name('instructions.show');
 
 Route::get('/', [Bitrix24AppController::class, 'index'])->name('bitrix24.app');
 Route::match(['get', 'post'], '/bitrix24/launch', [Bitrix24AppController::class, 'launch'])
